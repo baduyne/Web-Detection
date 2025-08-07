@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div id="container">
+    <h1>Detection</h1>
+    <div id="controls">
+      <input type="file" id="imageInput" accept="image/*" multiple>
+      <button id="sendBtn">Detec</button>
+    </div>
+    <div id="results"></div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
