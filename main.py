@@ -37,7 +37,7 @@ def prediction_handler(data):
 
             if len(buffer_images) == batch_size:
                 # Run YOLO inference
-                results = prediction(buffer_images)  # Hàm riêng bạn viết
+                results = prediction(buffer_images) 
 
                 # Gửi kết quả về frontend
                 for name, dets in zip(buffer_names, results):
