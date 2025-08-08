@@ -7,7 +7,7 @@ import numpy as np
 from yolo_inference import prediction
 
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins='*')  # Cho phép frontend truy cập
+socketio = SocketIO(app, cors_allowed_origins='*')
 
 @app.route('/')
 def index():

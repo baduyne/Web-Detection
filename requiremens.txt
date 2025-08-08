@@ -1,0 +1,6 @@
+ultralytics
+Flask
+flask-socketio
+eventlet
+numpy
+Pillow

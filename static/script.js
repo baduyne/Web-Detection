@@ -89,12 +89,13 @@ function drawDetections(filename, detections) {
         // Vẽ ảnh gốc lên canvas
         ctx.drawImage(image, 0, 0);
 
-        // Vẽ các bounding box
+        // Các thông số vẽ bounding box
         ctx.strokeStyle = 'red';
         ctx.lineWidth = 2;
         ctx.font = "16px Arial";
         ctx.fillStyle = 'red';
 
+         // Vẽ các bounding box
         detections.forEach(det => {
             const { x1, y1, x2, y2, class: cls } = det;
             ctx.strokeRect(x1, y1, x2 - x1, y2 - y1);
