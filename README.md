@@ -5,8 +5,8 @@
 
 - Clone repository và tải các package cần thiết:
 ```bash
-git clone https://github.com/baduyne/Detection_YOLOV8.git
-cd Detection_YOLOV8
+git clone https://github.com/baduyne/Web-Detection.git
+cd Web-Detection
 pip install -r requirements.txt
 ```
 
